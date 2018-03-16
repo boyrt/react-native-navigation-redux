@@ -45,6 +45,9 @@ function nav(state=initiaNavState,action){
             console.log('**************************')
             console.log('nextState=====',nextState)
             break;
+        case 'ExitApp':
+            nextState = initiaNavState;
+            break;
         default:
             console.log('nav=====','default')
             console.log('**************************')
